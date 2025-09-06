@@ -1,0 +1,66 @@
+.footer {
+  background: #111827; /* dark gray */
+  color: #d1d5db;      /* gray-300 */
+  padding: 3rem 1rem 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.logo h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo p {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.links a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #ffffff;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+
+.socials a {
+  color: #d1d5db;
+  transition: color 0.2s;
+}
+
+.socials a:hover {
+  color: #ffffff;
+}
+
+.bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  border-top: 1px solid #374151; /* gray-700 */
+  padding-top: 1rem;
+}

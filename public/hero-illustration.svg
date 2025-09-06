@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="180" fill="url(#grad)" opacity="0.15"/>
+  
+  <!-- Capsule base -->
+  <rect x="120" y="120" width="160" height="160" rx="80" fill="#2563EB"/>
+  <rect x="140" y="140" width="120" height="120" rx="60" fill="white"/>
+  
+  <!-- Capsule details -->
+  <circle cx="200" cy="200" r="30" fill="#2563EB" opacity="0.9"/>
+  <circle cx="200" cy="200" r="15" fill="white"/>
+  
+  <!-- Decorative stars -->
+  <circle cx="80" cy="80" r="5" fill="#7C3AED"/>
+  <circle cx="330" cy="100" r="8" fill="#FACC15"/>
+  <circle cx="300" cy="300" r="6" fill="#34D399"/>
+  
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,67 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" fill="none" aria-labelledby="title desc" role="img">
+  <title id="title">Time Capsule Illustration</title>
+  <desc id="desc">Illustration showing a stylized time capsule with a lock, calendar, photos and soft gradient background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E6F0FF" />
+      <stop offset="100%" stop-color="#F5E8FF" />
+    </linearGradient>
+    <linearGradient id="capsuleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded panel -->
+  <rect x="20" y="20" width="760" height="480" rx="24" fill="url(#bg)" />
+
+  <!-- Decorative circles -->
+  <circle cx="110" cy="80" r="28" fill="#FFDCA3" opacity="0.7"/>
+  <circle cx="700" cy="120" r="18" fill="#CDEBFF" opacity="0.8"/>
+  <circle cx="640" cy="420" r="24" fill="#E8D9FF" opacity="0.9"/>
+
+  <!-- Capsule main body -->
+  <g transform="translate(140,90)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="360" height="300" rx="40" fill="url(#capsuleGrad)"/>
+    </g>
+    <rect x="18" y="18" width="324" height="264" rx="32" fill="#fff" />
+    
+    <!-- Inner circle window -->
+    <ellipse cx="180" cy="120" rx="84" ry="84" fill="url(#capsuleGrad)" opacity="0.95"/>
+    <ellipse cx="180" cy="120" rx="50" ry="50" fill="#fff"/>
+
+    <!-- Lock icon on capsule -->
+    <rect x="160" y="60" width="40" height="34" rx="6" fill="#111827" opacity="0.9"/>
+    <rect x="168" y="68" width="24" height="20" rx="3" fill="#fff"/>
+    <path d="M176 52 a12 12 0 0 1 24 0" stroke="#111827" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Small accent lines -->
+    <rect x="80" y="220" width="200" height="6" rx="3" fill="#E6EEF9" />
+    <rect x="60" y="240" width="240" height="6" rx="3" fill="#F1E8FF" />
+  </g>
+
+  <!-- Calendar / date card -->
+  <g transform="translate(520,70)">
+    <rect x="0" y="0" width="220" height="140" rx="16" fill="#fff" stroke="#E6E9F2" />
+    <rect x="0" y="0" width="220" height="40" rx="16" fill="#2563EB" opacity="0.95"/>
+    <text x="110" y="28" font-family="Inter, Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="700">Unlock Date</text>
+    <text x="110" y="88" font-family="Inter, Arial, sans-serif" font-size="28" fill="#111827" text-anchor="middle" font-weight="700">12 • Jun • 2029</text>
+  </g>
+
+  <!-- Photo stack -->
+  <g transform="translate(520,230)">
+    <rect x="0" y="0" width="120" height="80" rx="8" fill="#FFF5EB" stroke="#F7D9B8"/>
+    <rect x="18" y="12" width="120" height="80" rx="8" fill="#E8F8FF" stroke="#CFEFFF" transform="rotate(-8 18 12)"/>
+    <rect x="36" y="24" width="120" height="80" rx="8" fill="#F7EBFF" stroke="#E6D9FF" transform="rotate(-16 36 24)"/>
+  </g>
+
+  <!-- Small text and badges -->
+  <text x="60" y="430" font-family="Inter, Arial, sans-serif" font-size="18" fill="#374151" font-weight="600">Preserve your memories securely</text>
+  <text x="60" y="455" font-family="Inter, Arial, sans-serif" font-size="14" fill="#6B7280">Add photos, voice notes, and letters — open them when the time comes.</text>
+
+</svg>

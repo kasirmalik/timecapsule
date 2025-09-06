@@ -1,0 +1,175 @@
+/* --- Existing Styles --- */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f9fd;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #c9d6ff, #94a3f6);
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 200px;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.sidebar li:hover {
+  text-decoration: underline;
+}
+
+.logout {
+  background: #ff6b6b;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.logout:hover {
+  background: #ff5252;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  margin-top: 50px;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #8e9efc;
+}
+
+.activity {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.activity h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.activity ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activity li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar li {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+  }
+
+  .activity {
+    padding: 1rem;
+  }
+}

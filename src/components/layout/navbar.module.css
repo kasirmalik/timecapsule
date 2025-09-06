@@ -1,0 +1,140 @@
+
+
+.navbar {
+  width: 100%;
+ background: linear-gradient(to bottom right, #eff6ff, #f3e8ff);
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-left: 30px;
+  font-weight: bold;
+  color: #2563eb; /* Tailwind blue-600 */
+  text-decoration: none;
+}
+.logoImg{
+    width: 20px;
+    height: 20px;
+}
+
+.menu {
+  display: none;
+  gap: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #374151; /* gray-700 */
+  font-weight: 500;
+  font-size: large;
+  font-family: Mona sans;
+  margin-top: 8px;
+ 
+}
+
+
+
+.toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #374151;
+}
+/* .signUp{
+  margin-top: 15px;
+} */
+
+/* Mobile dropdown */
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  background: white;
+  border-top: 1px solid #e5e7eb; /* gray-200 */
+}
+
+.mobileMenu a {
+  padding: 0.5rem 0;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  .toggle {
+    display: none;
+  }
+}
+.logoutBtn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logoutBtn:hover {
+  background: #e60000;
+}
+.createBtn {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+}
+
+.signUp:hover {
+  background: linear-gradient(135deg, #27ae60, #219150);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(46, 204, 113, 0.4);
+}
+
+.signUp:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(46, 204, 113, 0.2);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  .toggle {
+    display: none;
+  }
+}
+/* Hide logo on mobile */
+
+/* Hide logo image on mobile */
+@media (max-width: 767px) {
+  .logoImg {
+    display: none;
+  }
+}
